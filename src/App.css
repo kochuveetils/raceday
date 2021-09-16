@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+* {
+  line-height: 1.625;
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgba(201, 166, 221, 0.25);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: auto;
+  background-color: black;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: white;
+  height: 6vh;
+}
+
+.header-text {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  margin: 10px;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.grid-search {
+  margin: 0px;
+  border: 2px solid;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 3px rgba(78, 109, 106, 0.25);
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(50px, auto);
+  justify-content: center;
+}
+
+.grid-container {
+  height: 80vh;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  justify-items: center;
+}
+
+.search-section {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  background-color: bisque;
+}
+
+.box {
+  margin: 5px 0px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 3px rgba(78, 109, 106, 0.25);
+  outline: none;
+  background-color: ivory;
+}
+
+#meeting {
+  width: 25%;
+}
+
+#racing {
+  width: 25%;
+}
+
+#date {
+  width: 25%;
+}
+
+#timer {
+  width: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 2px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .grid-search {
+    height: 12vh;
+    display: grid;
+    margin: 0px;
+    border: 2px solid;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px 3px rgba(78, 109, 106, 0.25);
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .grid-container {
+    height: 80vh;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    justify-items: center;
   }
 }
