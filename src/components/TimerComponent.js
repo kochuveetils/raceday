@@ -45,10 +45,10 @@ const Timer = ({ propmin, propsec, fetchRace }) => {
           {minutes}:{seconds}
         </h1>
       ) : minutes === -1 ? (
-        <h1>
+        <h1 style={{ color: "red" }}>
           {/* {minutes}  */}
-          {"-"}
-          {seconds < 10 ? `0${seconds}` : seconds}
+          {"Ended "}
+          {seconds < 10 ? `${seconds}` : seconds}
         </h1>
       ) : (
         <h1>

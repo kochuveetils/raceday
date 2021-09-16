@@ -33,7 +33,7 @@ export default function RacesComponent({ race, fetchRace }) {
 
   const renderRaces = ({ isLoading, errMess, race }) => {
     if (isLoading) {
-      return <h3 className="card-heading">Race getting Loaded</h3>;
+      return <h3 className="card-heading">Race getting Loaded...</h3>;
     }
 
     if (errMess) {

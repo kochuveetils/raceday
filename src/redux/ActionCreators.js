@@ -38,9 +38,31 @@ export const fetchRace = () => (dispatch) => {
     )
     .then((response) => response.json())
     .then((race) => {
-      // console.log("races are");
-      // console.log(race.data);
       dispatch(addRace(race.data));
     })
     .catch((error) => dispatch(raceFailed(error.message)));
+
+  // return fetch(baseUrl)
+  //   .then(
+  //     (response) => {
+  //       if (response.ok) {
+  //         return response;
+  //       } else {
+  //         var error = new Error(
+  //           "Error " + response.status + ": " + response.statusText
+  //         );
+  //         error.response = response;
+  //         throw error;
+  //       }
+  //     },
+  //     (error) => {
+  //       var errmess = new Error(error.message);
+  //       throw errmess;
+  //     }
+  //   )
+  //   .then((response) => response.json())
+  //   .then((race) => {
+  //     dispatch(addRace(race.data));
+  //   })
+  //   .catch((error) => dispatch(raceFailed(error.message)));
 };

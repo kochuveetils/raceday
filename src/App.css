@@ -37,7 +37,7 @@ body {
   box-shadow: 3px 3px 3px 3px rgba(78, 109, 106, 0.25);
   height: 10vh;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
   grid-auto-rows: minmax(50px, auto);
   justify-content: center;
 }
@@ -64,6 +64,15 @@ body {
   border-radius: 8px;
   outline: none;
   background-color: bisque;
+}
+
+select {
+  width: 50%;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid hsl(261, 88%, 57%);
+  outline: none;
+  text-align: center;
+  border-radius: 0.3rem;
 }
 
 .box {
@@ -111,7 +120,7 @@ body {
     border: 2px solid;
     border-radius: 8px;
     box-shadow: 3px 3px 3px 3px rgba(78, 109, 106, 0.25);
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     justify-items: center;
     align-items: center;
     padding: 10px;
